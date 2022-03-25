@@ -10,6 +10,29 @@
   margin: 100px 50px;
 }
 
+.cart-container {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-height: 70vh;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  padding-left: 2rem;
+}
+
+.cart-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 576px) {
   .products-container {
     grid-template-columns: 1fr;
