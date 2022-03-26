@@ -1,0 +1,37 @@
+.faq h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.faq-container {
+  width: 50%;
+  max-width: 1440px;
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  /* text-align: center; */
+}
+
+.faq-container p {
+  line-height: 1.5;
+}
+
+/* Question:2  */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+th{
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
