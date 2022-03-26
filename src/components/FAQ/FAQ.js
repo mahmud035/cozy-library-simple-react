@@ -28,46 +28,51 @@ const FAQ = () => {
         {/* Question:2 */}
         <h3>2. Difference between props and state in React.</h3>
         <table>
-          <tr>
-            <th>props</th>
-            <th>state</th>
-          </tr>
-          <tr>
-            <td>The Data is passed from one component to another.</td>
-            <td> The Data is passed within the component only.</td>
-          </tr>
-          <tr>
-            <td>It is Immutable (cannot be modified).</td>
-            <td>It is Mutable ( can be modified).</td>
-          </tr>
-          <tr>
-            <td>Props can be used with state and functional components.</td>
-            <td>
-              State can be used only with the state components/class component
-              (Before 16.0).
-            </td>
-          </tr>
-          <tr>
-            <td>Props are read-only.</td>
-            <td>State is both read and write.</td>
-          </tr>
-          <tr>
-            <td>Props make components reusable.</td>
-            <td> State cannot make components reusable.</td>
-          </tr>
-          <tr>
-            <td>Just display the incoming data</td>
-            <td>State is also responsible for fetching remote data</td>
-          </tr>
-          <tr>
-            <td>
-              The component can't change incoming props. Only a parent is
-              allowed to change props of the child component.
-            </td>
-            <td>
-              Only the component that owns state can change it. State is private
-            </td>
-          </tr>
+          <thead>
+            <tr>
+              <th>props</th>
+              <th>state</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>The Data is passed from one component to another.</td>
+              <td> The Data is passed within the component only.</td>
+            </tr>
+            <tr>
+              <td>It is Immutable (cannot be modified).</td>
+              <td>It is Mutable ( can be modified).</td>
+            </tr>
+            <tr>
+              <td>Props can be used with state and functional components.</td>
+              <td>
+                State can be used only with the state components/class component
+                (Before 16.0).
+              </td>
+            </tr>
+            <tr>
+              <td>Props are read-only.</td>
+              <td>State is both read and write.</td>
+            </tr>
+            <tr>
+              <td>Props make components reusable.</td>
+              <td> State cannot make components reusable.</td>
+            </tr>
+            <tr>
+              <td>Just display the incoming data</td>
+              <td>State is also responsible for fetching remote data</td>
+            </tr>
+            <tr>
+              <td>
+                The component can't change incoming props. Only a parent is
+                allowed to change props of the child component.
+              </td>
+              <td>
+                Only the component that owns state can change it. State is
+                private
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
