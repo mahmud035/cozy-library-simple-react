@@ -5,7 +5,7 @@ import './Shop.css';
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  // console.log(cart);
+  const [item, setItem] = useState([]);
 
   useEffect(() => {
     fetch('products.json')
@@ -17,6 +17,13 @@ const Shop = () => {
     // console.log(product);
     const newCart = [...cart, product];
     setCart(newCart);
+  };
+
+  //*----- Choose one time-------- (Problem)
+  const chooseOneItem = (item) => {
+    const newCart = [...item];
+    const newIndex = Math.floor(Math.random() * newCart.length);
+    setItem(newCart[newIndex]);
   };
 
   const removeFromCart = (cart) => {
@@ -44,7 +51,9 @@ const Shop = () => {
           </div>
         ))}
         <div className="cart-btn-container">
-          <button className="cart-btn">Choose 1 For Me</button>
+          <button onClick={() => chooseOneItem(item)} className="cart-btn">
+            Choose 1 For Me
+          </button>
           <button onClick={() => removeFromCart(cart)} className="cart-btn">
             Choose Again
           </button>
