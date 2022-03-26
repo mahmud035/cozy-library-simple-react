@@ -19,6 +19,11 @@ const Shop = () => {
     setCart(newCart);
   };
 
+  const removeFromCart = (cart) => {
+    const newCart = [];
+    setCart(newCart);
+  };
+
   return (
     <div className="shop-container">
       <div className="products-container">
@@ -40,7 +45,9 @@ const Shop = () => {
         ))}
         <div className="cart-btn-container">
           <button className="cart-btn">Choose 1 For Me</button>
-          <button className="cart-btn">Choose Again</button>
+          <button onClick={() => removeFromCart(cart)} className="cart-btn">
+            Choose Again
+          </button>
         </div>
       </div>
     </div>
